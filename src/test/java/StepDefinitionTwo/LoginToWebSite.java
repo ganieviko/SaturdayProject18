@@ -39,11 +39,11 @@ public class LoginToWebSite extends Base {
     }
 
     @When("I login with valid password {string} and login {string}")
-    public void iLoginWithValidPasswordAndLogin(String arg0, String arg1) {
+    public void iLoginWithValidPasswordAndLogin(String login, String password) {
         wait.until(ExpectedConditions.elementToBeClickable(Selectors.usernameMersys));
-        driver.findElement(Selectors.usernameMersys).sendKeys(arg0);
+        driver.findElement(Selectors.usernameMersys).sendKeys(login);
         wait.until(ExpectedConditions.elementToBeClickable(Selectors.passwordMersys));
-        driver.findElement(Selectors.passwordMersys).sendKeys(arg1);
+        driver.findElement(Selectors.passwordMersys).sendKeys(password);
     }
 
     @When("I try to login with invalid login {string} or password {string}")
