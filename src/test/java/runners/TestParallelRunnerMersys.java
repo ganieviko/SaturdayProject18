@@ -17,10 +17,4 @@ public class TestParallelRunnerMersys extends AbstractTestNGCucumberTests {
     public void setUpDriver() {
        driver.quit();
     }
-//
-//    @Override
-//    @DataProvider(parallel = true)
-//    public Object[][] scenarios() {
-//        return super.scenarios();
-//    }
 }
