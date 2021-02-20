@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class TestingPageTask1 {
+public class DontUseIt {
     WebDriver driver = Driver.getDriver();
     WebDriverWait wait = new WebDriverWait(driver, 10);
     public void pageOne(){
@@ -21,4 +21,5 @@ public class TestingPageTask1 {
     @FindBy(css = "input[type='button']")
     private WebElement saveButton;
 
-}
+
+}/////////////////////           LEAVE IT FOR FUTURE UPDATE                //////////////////////////////
